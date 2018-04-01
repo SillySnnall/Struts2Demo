@@ -30,4 +30,6 @@
             <result name="success" type="dispatcher" >/hello.jsp</result>
         </action>
     </package>
+    <!-- 引入其他struts配置文件 -->
+    <!--<include file="cn/itheima/b_dynamic/struts.xml"></include>-->
 </struts>
