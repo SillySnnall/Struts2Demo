@@ -1,19 +1,21 @@
 package silly;
 
-public class HelloAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class HelloAction extends ActionSupport{
 
 	public String hello(){
 		
 		System.out.println("hello world!");
 		
-		return "success";
+		return SUCCESS;
 	}
 
 	public String add(){
 
 		System.out.println("add");
 
-		return "success";
+		return SUCCESS;
 	}
 	
 }

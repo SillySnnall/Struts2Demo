@@ -32,4 +32,27 @@
     </package>
     <!-- 引入其他struts配置文件 -->
     <!--<include file="cn/itheima/b_dynamic/struts.xml"></include>-->
+
+    <package name="two" namespace="/two" extends="struts-default"  strict-method-invocation="false">
+        <!-- action元素:配置action类
+                name属性: 决定了Action访问资源名.
+                class属性: action的完整类名
+                method属性: 指定调用Action中的哪个方法来处理请求
+         -->
+        <action name="*" class="silly.TwoAction" method="{1}" >
+            <!-- result元素:结果配置
+                    name属性: 标识结果处理的名称.与action方法的返回值对应.
+                    type属性: 指定调用哪一个result类来处理结果,默认使用转发.
+                    标签体:填写页面的相对路径
+            -->
+            <!--跨 package 访问 Action-->
+            <!--TwoAction 中的 jump 方法 重定向到 HelloAction 中的 add 方法-->
+            <result  name="success"  type="redirectAction">
+                <!-- action所在的命名空间 -->
+                <param name="namespace">/hello</param>
+                <!-- action的名字 -->
+                <param name="actionName">add</param>
+            </result>
+        </action>
+    </package>
 </struts>
