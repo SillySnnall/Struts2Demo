@@ -1,4 +1,4 @@
-package silly;
+package silly.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 

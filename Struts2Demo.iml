@@ -14,7 +14,7 @@
         <configuration>
           <fileset id="s2fileset" name="Default File Set " removed="false">
             <file>file://$MODULE_DIR$/src/struts.xml</file>
-            <file>jar://D:/DownLoad/struts-2.5.16-min-lib/struts2-core-2.5.16.jar!/struts-default.xml</file>
+            <file>file://$MODULE_DIR$/src/silly/action/android_struts.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
@@ -28,7 +28,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Struts 2" level="project" />
+    <orderEntry type="library" name="Struts 2-2.5.14.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.2" level="application_server_libraries" />
+    <orderEntry type="module-library">
+      <library name="JUnit4">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
